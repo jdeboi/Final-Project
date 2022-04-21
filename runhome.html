@@ -1,0 +1,74 @@
+<html>
+
+<head>
+    <meta name="viewport" content="width=400, initial-scale=1">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
+    <script src="lib/p5.sound.min.js"></script>
+    <script src="js/mousehole.js"></script>
+
+    <style>
+        * {
+            padding: 0px;
+            margin: 0px;
+        }
+
+        #startScreen {
+            background-color: black;
+            color: white;
+            background: rgba(0, 0, 0, .8);
+            width: 100%;
+            height: 100%;
+            overflow: none;
+            position: absolute;
+            top: 0;
+            left: 0;
+            /* padding-top: 20px;
+      padding-left: 20px; */
+            font-family: Arial, Helvetica, sans-serif;
+            /* text-align: center; */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+
+        #startScreen a {
+            color: rgb(200, 163, 255);
+        }
+
+        h1 {
+            font-size: 250%;
+        }
+
+        h3 {
+            font-size: 100%;
+        }
+
+        #startScreen div {
+            padding-bottom: 10px;
+        }
+
+        button {
+            width: 90px;
+            height: 40px;
+            font-size: 18px;
+            margin-top: 50px;
+        }
+    </style>
+    <script></script>
+</head>
+
+<body>
+    <div id="startScreen">
+        <div>
+            <h1><em>RUN HOME</em></h1>
+        </div>
+        <div>
+            <h3><a href="https://jdeboi.com/">JENNA DEBOISBLANC</a></h3>
+        </div>
+        <div><button onclick="startAnimation()">start</button></div>
+    </div>
+</body>
+
+</html>
