@@ -24,6 +24,7 @@ function preload() {
 }
 function setup() {
     createCanvas(windowWidth, windowHeight);
+    getAudioContext().suspend();
     imageMode(CENTER);
     flock = new Flock();
     for (var i_1 = 0; i_1 < 100; i_1++) {
@@ -46,7 +47,7 @@ function setup() {
     holeMice.push(new zMouse(width * .8, height * .4));
     holeMice.push(new zMouse(width * .5, height * .8));
     var i = 0;
-    var w = width * .2;
+    var w = max(140, width * .2);
     var h = w * .6;
     var sp = w * .7;
     var startX = (width - (2 * w + sp)) / 2;
@@ -83,6 +84,7 @@ function displayDivs() {
     }
 }
 function startAnimation() {
+    userStartAudio();
     hasStarted = true;
     startTime = millis();
     select("#startScreen").style("display", "none");
